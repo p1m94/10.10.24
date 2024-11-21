@@ -14,14 +14,14 @@ def calculate_structure_sum(*args):
 
     return total_sum
 
-# Тестовая структура данных
+# Код студента
 data_structure = [
     [1, 2, 3],                           # Сумма: 1 + 2 + 3 = 6
     {'a': 4, 'b': 5},                    # Сумма: 1 (a) + 1 (b) + 4 + 5 = 11
     (6, {'cube': 7, 'drum': 8}),         # Сумма: 6 + 4 (cube) + 4 (drum) + 7 + 8 = 29
-    "Hello",                              # Сумма: длина "Hello" = 5
-    ((), [{(2, 'Urban', ('Urban2', 35))}])  # Сумма: 2 + 5 (Urban) + 6 (Urban2) + 35
-]
+    "Hello",                              # Сумма: 5 (Hello) = 5
+    ((), [{(2, 'Urban', ('Urban2', 35))}])  # Сумма: 2 + 5 (Urban) + 6 (Urban2) + 35 = 48
+]                                           # Сумма: 6 + 11 + 29 + 5 + 48 = 99
 
 result = calculate_structure_sum(*data_structure)
 print(result)
